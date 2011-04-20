@@ -1,0 +1,7 @@
+Installation:
+
+    git clone git://github.com/sheutka/dotfiles ~
+
+Warning:
+    
+    This will overwrite your current files!
