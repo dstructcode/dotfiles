@@ -1,13 +1,10 @@
 # .zshrc - zsh configuration file
 #
 # Randy Morris (rson451@gmail.com)
+# Jason Dana (sheut.ka@gmail.com)
 #
 # CREATED:  a long time ago
-# MODIFIED: 2011-02-09 12:51
-#
-# Note: This file closely ties in with my screenrc for the screen title stuff.
-#       See http://rsontech.net/dotfiles/screenrc
-#
+# MODIFIED: 2011-05-07 13:10
 
 # simple settings {{{
 HISTFILE=~/.zsh_history
@@ -115,8 +112,8 @@ chpwd(){ #{{{
 
 set-prompt(){ #{{{
     git-prompt
-    PS1="%{$fg_no_bold[white]%}%~ $GIT_PROMPT%(?.%{$fg_no_bold[blue]%}>%{$fg_bold[blue]%}>%{$fg_bold[cyan]%}>.%{$fg_no_bold[magenta]%}>%{$fg_bold[red]%}>%{$fg_bold[magenta]%}>)%{$reset_color%} "
-    RPROMPT="%(?.%{$fg_bold[cyan]%}<%{$fg_bold[blue]%}<%{$fg_no_bold[blue]%}<.%{$fg_bold[magenta]%}<%{$fg_bold[red]%}<%{$fg_no_bold[magenta]%}<) %{$fg_no_bold[white]%}%n@%m%{$reset_color%}"
+    PS1="%{$fg_no_bold[white]%}%~ $GIT_PROMPT%(?.%{$fg_no_bold[blue]%}:%{$fg_bold[blue]%}:%{$fg_bold[cyan]%}:.%{$fg_no_bold[magenta]%}:%{$fg_bold[red]%}:%{$fg_bold[magenta]%}:)%{$reset_color%} "
+    RPROMPT="%(?.%{$fg_bold[cyan]%}:%{$fg_bold[blue]%}:%{$fg_no_bold[blue]%}:.%{$fg_bold[magenta]%}:%{$fg_bold[red]%}:%{$fg_no_bold[magenta]%}:) %{$fg_no_bold[white]%}%n@%m%{$reset_color%}"
 } #}}}
 
 git-prompt(){ #{{{

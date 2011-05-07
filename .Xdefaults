@@ -45,7 +45,7 @@ xft*hinting: true
 
 !colors {{{
 !black
-*color0: #222222
+*color0: #111111
 *color8: #454545
 
 !red

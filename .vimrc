@@ -1,3 +1,10 @@
+" .vimrc - Vim config file
+"
+" Jason Dana (sheut.ka@gmail.com)
+"
+" CREATED:  2011-04-20 
+" MODIFIED: 2011-05-07 13:09
+
 autocmd FileType c setlocal cino=(0
 syntax on
 colo earth
@@ -17,3 +24,5 @@ set expandtab
 let c_syntax_for_h = 1
 let c_no_trail_space_error = 1
 let c_no_tab_space_error = 1
+set undofile
+set undodir=/tmp
